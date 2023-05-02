@@ -2,3 +2,129 @@ $primary-color:#9ACA3C;
 $secundary-color:#0000;
 $tertiary-color:#ffffff;
 $primary-text-color:#7C6A0A;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+.books {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    h2 {
+    text-align: center;
+    }
+    
+    form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: bold;
+      }
+      
+      input,
+      select {
+        display: block;
+        margin-bottom: 20px;
+        padding: 5px;
+        width: 100%;
+        max-width: 300px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+      
+      input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+      
+        &:hover {
+          background-color: #0069d9;
+        }
+      }
+    }
+}
+
+.offering {
+    text-align: center;
+    
+    .offering-detail--title {
+      margin-bottom: 30px;
+      
+      h3 {
+        margin: 0;
+        font-size: 28px;
+        font-weight: 700;
+      }
+      
+      p {
+        margin: 0;
+        font-size: 20px;
+        font-weight: 400;
+      }
+    }
+    
+    .offering-cards--container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+      .offering-detail--card {
+        margin: 0 15px 15px 15px;
+        max-width: 100%;
+        width: calc(100% - 30px);
+        text-align: center;
+        
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+        
+        img {
+          max-width: 100%;
+        }
+        
+        h4 {
+          margin-top: 15px;
+          margin-bottom: 5px;
+          font-size: 24px;
+          font-weight: 700;
+        }
+        
+        .offering--card-body {
+          margin: 0;
+          font-size: 18px;
+          font-weight: 400;
+        }
+      }
+      
+      // Media query for screens wider than 768px
+      @media (min-width: 768px) {
+        justify-content: flex-start;
+        
+        .offering-detail--card {
+          max-width: calc(33.33% - 30px);
+          width: calc(33.33% - 30px);
+          margin: 0 15px 30px 15px;
+          
+          &:nth-child(3n) {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+  
