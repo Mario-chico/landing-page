@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+header {
+  text-align: center;
+}
+
 .books {
   display: flex;
   flex-direction: column;
@@ -35,7 +39,7 @@
   box-sizing: border-box;
 }
 .books form input[type=submit] {
-  background-color: #007bff;
+  background-color: #9ACA3C;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -73,9 +77,6 @@
   width: calc(100% - 30px);
   text-align: center;
 }
-.offering .offering-cards--container .offering-detail--card:nth-child(3n) {
-  margin-right: 0;
-}
 .offering .offering-cards--container .offering-detail--card img {
   max-width: 100%;
 }
@@ -102,4 +103,42 @@
   .offering .offering-cards--container .offering-detail--card:nth-child(3n) {
     margin-right: 0;
   }
+}
+
+.us {
+  background-color: black;
+  padding: 2rem 5vw;
+  text-align: center;
+}
+.us .us-title {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #7C6A0A;
+}
+.us .us-text {
+  margin: 2rem 0;
+  color: #7C6A0A;
+  text-align: left;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.team .team-member {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.team .team-member img {
+  width: 100%;
+  height: auto;
+}
+.team .team-member .member-name {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
 }/*# sourceMappingURL=styles.css.map */

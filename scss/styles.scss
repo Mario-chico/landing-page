@@ -9,7 +9,9 @@ $primary-text-color:#7C6A0A;
 }
 
 
-
+header {
+  text-align: center;
+}
 
 .books {
     display: flex;
@@ -45,7 +47,7 @@ $primary-text-color:#7C6A0A;
       }
       
       input[type="submit"] {
-        background-color: #007bff;
+        background-color: $primary-color;
         color: #fff;
         border: none;
         border-radius: 5px;
@@ -88,11 +90,7 @@ $primary-text-color:#7C6A0A;
         max-width: 100%;
         width: calc(100% - 30px);
         text-align: center;
-        
-        &:nth-child(3n) {
-          margin-right: 0;
-        }
-        
+                
         img {
           max-width: 100%;
         }
@@ -124,6 +122,49 @@ $primary-text-color:#7C6A0A;
             margin-right: 0;
           }
         }
+      }
+    }
+  }
+  
+  .us {
+    background-color: black;
+    padding: 2rem 5vw;
+    text-align: center;
+    
+    .us-title {
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: $primary-text-color;
+    }
+    
+    .us-text {
+      margin: 2rem 0;
+      color: $primary-text-color;
+      text-align: left;
+    }
+  }
+  
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    
+    .team-member {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      
+      img {
+        width: 100%;
+        height: auto;
+      }
+      
+      .member-name {
+        text-align: center;
+        margin-top: 10px;
+        font-weight: bold;
       }
     }
   }
