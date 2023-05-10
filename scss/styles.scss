@@ -1,5 +1,5 @@
 $primary-color:#9ACA3C;
-$secundary-color:#0000;
+$secundary-color:#000000;
 $tertiary-color:#ffffff;
 $primary-text-color:#7C6A0A;
 *{
@@ -7,7 +7,10 @@ $primary-text-color:#7C6A0A;
     padding: 0;
     box-sizing: border-box;
 }
-
+body{
+  color: $primary-color;
+  background-color: $secundary-color;
+}
 
 header {
   text-align: center;
@@ -134,12 +137,10 @@ header {
     .us-title {
       font-weight: bold;
       margin-bottom: 1rem;
-      color: $primary-text-color;
     }
     
     .us-text {
       margin: 2rem 0;
-      color: $primary-text-color;
       text-align: left;
     }
   }
@@ -202,7 +203,7 @@ header {
     // Set the width of the carousel container
     .carousel-container {
       width: 100%;
-      overflow: hidden;
+      overflow: auto;
       position: relative;
     }
   
@@ -211,24 +212,24 @@ header {
       display: flex;
       width: 100%;
       position: relative;
-      transition: transform 0.5s ease;
+      //animation: slide 10s infinite; // Add animation to automatically slide the images
     }
   
     // Set the width and margin of each slide item
     .carousel-slide {
       display: flex;
       flex-wrap: nowrap;
-      overflow-x: scroll;
-      width: calc(578px * 3); // 3 is the number of items in the carousel
-      margin: 0;
-      padding: 0;
     }
   
     // Set the width of each community item and position them beside each other
     .community-item {
-      flex: 0 0 calc(578px);
+      flex: 0 0 20em;
       margin-right: 20px;
       margin-bottom: 20px;
+      background-color: $primary-color;
+      color: $secundary-color;
+      padding: 30px;
+      box-shadow: 4px 4px 6px rgb(118 191 50);
       &:last-child {
         margin-right: 0;
       }
@@ -238,6 +239,9 @@ header {
     .community-item img {
       width: 100%;
       height: auto;
+      max-width: 15em;
+      display: block;
+      margin: 0 auto;
     }
   
     .community-description {
@@ -245,7 +249,30 @@ header {
       h4, p {
         margin: 0;
         padding: 0;
+        text-align: center;
       }
     }
   }
-  
+
+  footer{
+    width: 100%;
+    height: auto;
+    background-color: $secundary-color;
+    color: $primary-color;
+    padding: 1.5em;
+    text-align: center;
+    p{
+      padding-top: .3em;
+    }
+    .social-media{
+      display: flex;
+      justify-content: center; 
+      gap: 1em;
+      padding-top: .5em;
+    }
+    .social-media img {
+      width: 36px;
+      height: auto;
+    }
+
+  }

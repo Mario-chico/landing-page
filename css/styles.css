@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  color: #9ACA3C;
+  background-color: #000000;
+}
+
 header {
   text-align: center;
 }
@@ -113,11 +118,9 @@ header {
 .us .us-title {
   font-weight: bold;
   margin-bottom: 1rem;
-  color: #7C6A0A;
 }
 .us .us-text {
   margin: 2rem 0;
-  color: #7C6A0A;
   text-align: left;
 }
 
@@ -173,27 +176,26 @@ header {
 
 .community .carousel-container {
   width: 100%;
-  overflow: hidden;
+  overflow: auto;
   position: relative;
 }
 .community .carousel-wrapper {
   display: flex;
   width: 100%;
   position: relative;
-  transition: transform 0.5s ease;
 }
 .community .carousel-slide {
   display: flex;
   flex-wrap: nowrap;
-  overflow-x: scroll;
-  width: 1734px;
-  margin: 0;
-  padding: 0;
 }
 .community .community-item {
-  flex: 0 0 578px;
+  flex: 0 0 20em;
   margin-right: 20px;
   margin-bottom: 20px;
+  background-color: #9ACA3C;
+  color: #000000;
+  padding: 30px;
+  box-shadow: 4px 4px 6px rgb(118, 191, 50);
 }
 .community .community-item:last-child {
   margin-right: 0;
@@ -201,6 +203,9 @@ header {
 .community .community-item img {
   width: 100%;
   height: auto;
+  max-width: 15em;
+  display: block;
+  margin: 0 auto;
 }
 .community .community-description {
   margin-top: 10px;
@@ -208,4 +213,27 @@ header {
 .community .community-description h4, .community .community-description p {
   margin: 0;
   padding: 0;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+  color: #9ACA3C;
+  padding: 1.5em;
+  text-align: center;
+}
+footer p {
+  padding-top: 0.3em;
+}
+footer .social-media {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding-top: 0.5em;
+}
+footer .social-media img {
+  width: 36px;
+  height: auto;
 }/*# sourceMappingURL=styles.css.map */
